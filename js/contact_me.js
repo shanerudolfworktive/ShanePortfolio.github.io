@@ -20,7 +20,7 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "https://formspree.io/shaneVersame@mailinator.com",
+                url: "https://formspree.io/shaneRudolfWorktive@gmail.com",
                 method: "POST",
                 data: {
                     message: "name=" +name + "; phone=" + phone + "; email=" + email + "; message=" + message
