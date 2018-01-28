@@ -15,12 +15,23 @@ body {
 
 #selfLogoId{
     position: absolute;
-    max-width: 120%;
-    max-height: 120%;
+    max-width: 150%;
+    max-height: 150%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    left: 58.5%;
+    left: 84.5%;
     top: 14%;
+    z-index: 1000;
+}
+
+#skillsLogoId{
+    position: absolute;
+    max-width: 32%;
+    max-height: 32%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    left: 53%;
+    top: 28%;
     z-index: 1000;
 }
 
