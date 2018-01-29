@@ -13,6 +13,73 @@ body {
     height: 610px;
 }
 
+#mainNavBlogPage{
+    position: absolute;
+}
+
+.media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+#blogTitle{
+    text-transform: capitalize;
+    text-decoration: underline;
+    color: #DB991F;
+}
+
+#blogDescription{
+    color: #CCC8C2;
+}
+
+.media-body {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+header #blogMedia{
+    padding-top: 4%;
+}
+
+header #blogMediaBody{
+    padding-left: 3%;
+}
+
+header #blogPageContainer{
+    max-width: 800px;
+    width: 90%;
+    padding-top: 140px;
+    padding-left: 11%;
+}
+
+header #blogPageCell {
+    padding-bottom: 3%;
+    border-bottom-width:2px;
+    border-bottom-color:White;
+    border-bottom-style: solid;
+}
+
+header #blogPageDiv a{
+    display: inline;
+}
+
+header.blogPage img{
+    max-width: 150px;
+    max-height: 270px;
+    width: auto;
+    height: auto;
+}
+
+#blogsId{
+    background-color: #00cc00;
+    border-radius: 3px;
+}
+
 #selfLogoId{
     position: absolute;
     max-width: 150%;
@@ -657,34 +724,28 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 
-header{
-    linear, left top, left bottom, from(rgba(50,50,50,0.8)),
-  to(rgba(80,80,80,0.2)), color-stop(.5,#333333)
+header.homePage {
+  background-image: url('../img/header-bg.jpg');
+  min-height:130vh;
 }
 
-header {
-  min-height:130vh;
-  background-image: url('../img/header-bg.jpg');
-  background-repeat: no-repeat;
+header.blogPage{
+  background-image: url('../img/blogBackground.jpg');
+  min-height:100vh;
+}
+
+header{
   background-attachment: scroll;
-  background-position: center center;
+  background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  text-align: center;
+  background-position: center center;
   color: white;
 }
 
 
-header .intro-text .intro-heading {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 50px;
-  line-height: 50px;
-  margin-bottom: 25px;
-}
 @media (min-width: 768px) {
   header .intro-text {
     padding-top: 300px;
