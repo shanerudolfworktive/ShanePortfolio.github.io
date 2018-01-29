@@ -34,6 +34,7 @@ body {
 
 #blogDescription{
     color: #CCC8C2;
+    line-height: 1.5em;
 }
 
 .media-body {
@@ -108,7 +109,7 @@ header.blogPage img{
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    top:80%;
+    top:85%;
     width: 820px;
     height: 670px;
     background-color: #333B50;
@@ -116,6 +117,7 @@ header.blogPage img{
 
 #about .section-heading{
     color: white;
+    padding-top: -100%;
 }
 
 #about .section-subheading{

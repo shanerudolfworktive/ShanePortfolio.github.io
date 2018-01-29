@@ -84,7 +84,7 @@
     <section id="about">
         <div class="text-center">
             <h2 class="section-heading">About</h2>
-            <h3 class="section-subheading text-muted">Hello, my name is Shane Rudolf. I've been in the mobile industry for over six years and I have a passion for creating stuning Android and iOS apps that could improve people's live from different aspects. My latest work is involving with building wearable device that increase the awareness for early childhoods' brain development. I am looking to be in your team with the next genius ideas.</h3>
+            <h3 class="section-subheading text-muted">Hello, my name is Shane Rudolf. I am a senior mobile developer with 6+ years experiences and a co-founder of AI Nature. My passion is to create stuning Android and iOS apps that could improve people's live from different aspects. My latest work is involving with building wearable device that could help increase the awareness for early childhoods' brain development.</h3>
             <a class="button" href="file/resumeShane.pdf" download>download resume</a>
         </div>
     </section>
@@ -121,17 +121,18 @@
 												 <h3>Architecture</h3>	
 											 </div>								  
 										</div>
-										<div class="col-md-3">	
-											<div class="skill-grid">
-												<div class="circle skills-circle" id="skills-circle-rela-db" percentage=80></div>									
-												 <h3>Relational Database</h3>	
-											 </div>								  
-										</div>
+                                    
+                                        <div class="col-md-3">	
+                                            <div class="skill-grid">
+                                                <div class="circle skills-circle" id="skills-circle-mongodb" percentage=80></div>									
+                                                 <h3>Xamarin / C#</h3>	
+                                             </div>
+                                        </div>
                                     
                                         <div class="col-md-3">	
                                             <div class="skill-grid">
                                                 <div class="circle skills-circle" id="skills-circle-unit-testing" percentage=75></div>									
-                                                 <h3>Unit/UI<br>Testing</h3>	
+                                                 <h3>Unit / UI<br>Testing</h3>	
                                              </div>								  
                                         </div>
                                     
@@ -145,16 +146,16 @@
                                         <div class="col-md-3">	
                                             <div class="skill-grid">
                                                 <div class="circle skills-circle" id="skills-circle-git" percentage=90></div>									
-                                                 <h3>Git/SVN</h3>	
+                                                 <h3>Git / SVN</h3>	
                                              </div>								  
                                         </div>
                                     
                                         <div class="col-md-3">	
-                                            <div class="skill-grid">
-                                                <div class="circle skills-circle" id="skills-circle-html" percentage=75></div>									
-                                                 <h3>HTML</h3>	
-                                             </div>								  
-                                        </div>
+											<div class="skill-grid">
+												<div class="circle skills-circle" id="skills-circle-rela-db" percentage=80></div>									
+												 <h3>Relational Database</h3>	
+											 </div>								  
+										</div>
                                     
                                         <div class="col-md-3">	
                                             <div class="skill-grid">
@@ -176,12 +177,12 @@
                                                  <h3>NodeJS</h3>	
                                              </div>								  
                                         </div>
-                                        
+                                    
                                         <div class="col-md-3">	
                                             <div class="skill-grid">
-                                                <div class="circle skills-circle" id="skills-circle-mongodb" percentage=60></div>									
-                                                 <h3>MongoDB</h3>	
-                                             </div>
+                                                <div class="circle skills-circle" id="skills-circle-html" percentage=75></div>									
+                                                 <h3>HTML</h3>	
+                                             </div>								  
                                         </div>
                                     
 										<div class="clearfix"> </div>
@@ -190,24 +191,23 @@
 					  </div>
 					<!---->
 					 <script type="text/javascript" src="js/circles.js"></script>
-                         <script>
-                            var divs = document.getElementsByClassName('skills-circle')
-                            console.log("divs = " + divs.length)
-                            for (var i = 0; i < divs.length; i++) {
-                                var child = divs[i];
-                                percentage = child.getAttribute('percentage');
-                                console.log("percentage = " + percentage)
-                                Circles.create({
-                                    id:         child.getAttribute('id'),
-                                    percentage: percentage,
-                                    radius:     80,
-                                    width:      10,
-                                    number:   	percentage,
-                                    text:       '%',
-                                    colors:     ['#181115', '#00D646']
-                                });
-                            }
-							
+                     <script>
+                        var divs = document.getElementsByClassName('skills-circle')
+                        console.log("divs = " + divs.length)
+                        for (var i = 0; i < divs.length; i++) {
+                            var child = divs[i];
+                            percentage = child.getAttribute('percentage');
+                            console.log("percentage = " + percentage)
+                            Circles.create({
+                                id:         child.getAttribute('id'),
+                                percentage: percentage,
+                                radius:     80,
+                                width:      10,
+                                number:   	percentage,
+                                text:       '%',
+                                colors:     ['#181115', '#00D646']
+                            });
+                        }	
 					</script>
 					
 					<!--/-->
